@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   patch 'songs/:id', to: 'songs#update'
   delete '/songs/:id', to: 'songs#destroy'
   
+  
 end
 
   get '/songs', to: 'songs#index'
@@ -14,4 +15,4 @@ end
   patch '/songs/:id', to: 'songs#update'
   delete '/songs/:id', to: 'songs#destroy'
 
-  root 'songs#index'
+  
