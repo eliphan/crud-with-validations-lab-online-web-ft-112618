@@ -34,7 +34,10 @@ class SongsController < ApplicationController
     end
   end
   
-  
+  def destroy
+    Song.find(params[:id]).destroy
+    redirect_to people_url
+  end
     
   private
   
